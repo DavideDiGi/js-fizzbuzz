@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: darkcyan;
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1{
+    text-align: center;
+    color: white;
+    font-size: 4em;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+.container{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+
+
+}
+.container .box {
+    width: calc(100% / 7 - 20px);
+    height: 140px;
+    margin: 10px;
+    background-color: rgb(27, 144, 239);
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2em;
+}
+.container .box.fizz{
+    background-color: rgb(39, 225, 39);
+}
+.container .box.buzz{
+    background-color: rgb(226, 185, 62);
+}
+.container .box.fizz-buzz{
+    background-color: red;
+}

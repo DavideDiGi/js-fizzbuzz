@@ -14,15 +14,19 @@ const bythrive = "FizzBuzz"
 for (let i = 1; i <= 100; i++) {
     
     if (i % 3 == 0 && i % 5 == 0) {
-        element = `<div class="box box--${i}">${bythrive}</div>`;
+        element = `<div class="box fizz-buzz ${i}">${bythrive}</div>`;
         domContainer.innerHTML += element;
+
+        // element.style.color="red";
+        
+        
     }
     else if (i % 3 == 0) {
-        element = `<div class="box box--${i}">${bythree}</div>`;
+        element = `<div class="box fizz ${i}">${bythree}</div>`;
         domContainer.innerHTML += element ;
     }
     else if (i % 5 == 0) {
-        element = `<div class="box box--${i}">${byfive}</div>`;
+        element = `<div class="box buzz ${i}">${byfive}</div>`;
         domContainer.innerHTML += element;
     }
     else {
